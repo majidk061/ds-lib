@@ -1,0 +1,23 @@
+{
+  "name": "swire-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.0.5",
+    "@angular/core": "^12.0.5",
+    "bootstrap": "^5.2.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "tslib": "^2.1.0"
+  },
+  "whitelistedNonPeerDependencies": [
+    "."
+  ],
+  "main": "bundles/swire-lib.umd.js",
+  "module": "fesm2015/swire-lib.js",
+  "es2015": "fesm2015/swire-lib.js",
+  "esm2015": "esm2015/swire-lib.js",
+  "fesm2015": "fesm2015/swire-lib.js",
+  "typings": "swire-lib.d.ts",
+  "sideEffects": false
+}

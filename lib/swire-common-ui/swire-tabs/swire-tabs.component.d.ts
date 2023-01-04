@@ -1,0 +1,37 @@
+import { AfterViewInit, OnInit } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import * as i0 from "@angular/core";
+export declare class SwireTabsComponent implements OnInit, ControlValueAccessor, AfterViewInit {
+    mySwireTabUl: any;
+    mySwireTabUlLi: any;
+    isPrimary: boolean;
+    tabsDataList: any;
+    isShowLeftArrow: boolean;
+    isShowRightArrow: boolean;
+    szRadioClass: string;
+    swireDynamicDivWidth: string;
+    ulWidth: string;
+    liWidth: string;
+    isDisabled: boolean;
+    swiDynamicClassForTabs: string;
+    activeClassName: string;
+    activeIndex: number;
+    constructor();
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    onChange: (szValue: any) => void;
+    onTouch: any;
+    touched: boolean;
+    disabled: boolean;
+    onTouched: () => void;
+    writeValue(obj: any): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    setDisabledState?(isDisabled: boolean): void;
+    onChangeHandler(e: any): void;
+    markAsTouched(): void;
+    updateActiveTab(index: number): void;
+    scroll(name: string): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<SwireTabsComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SwireTabsComponent, "swire-tabs", never, { "isPrimary": "isPrimary"; "tabsDataList": "tabsDataList"; "isShowLeftArrow": "isShowLeftArrow"; "isShowRightArrow": "isShowRightArrow"; "szRadioClass": "szRadioClass"; "swireDynamicDivWidth": "swireDynamicDivWidth"; "isDisabled": "isDisabled"; "swiDynamicClassForTabs": "swiDynamicClassForTabs"; }, {}, never, never>;
+}

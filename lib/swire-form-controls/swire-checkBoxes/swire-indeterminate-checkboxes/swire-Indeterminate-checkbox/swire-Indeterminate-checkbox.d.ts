@@ -1,0 +1,30 @@
+import { OnChanges, OnInit } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import * as i0 from "@angular/core";
+export declare class SwireIndeterminateCheckboxComponent implements OnInit, ControlValueAccessor, OnChanges {
+    disabled: any;
+    checked: any;
+    isDisabled: boolean;
+    indeterminateCheckBoxLabel: string;
+    ischecked: any;
+    name: string;
+    swireDynamicClassName: string;
+    swidynamicClassForIndeterminateState: string;
+    countLength: never[];
+    showCount: boolean;
+    szValue: null;
+    touched: Boolean;
+    onChange: any;
+    onTouch: any;
+    writeValue(checked: boolean): void;
+    registerOnChange(onChange: any): void;
+    registerOnTouched(onTouched: any): void;
+    markAsTouched(): void;
+    setDisabledState(isDisabled: boolean): void;
+    onModelChange(e: boolean): void;
+    constructor();
+    ngOnInit(): void;
+    ngOnChanges(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<SwireIndeterminateCheckboxComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SwireIndeterminateCheckboxComponent, "swire-Indeterminate-checkbox", never, { "isDisabled": "isDisabled"; "indeterminateCheckBoxLabel": "indeterminateCheckBoxLabel"; "ischecked": "ischecked"; "name": "name"; "swireDynamicClassName": "swireDynamicClassName"; "swidynamicClassForIndeterminateState": "swidynamicClassForIndeterminateState"; "countLength": "countLength"; "showCount": "showCount"; }, {}, never, never>;
+}

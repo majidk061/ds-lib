@@ -1,0 +1,38 @@
+import { ElementRef, OnInit } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import * as i0 from "@angular/core";
+export declare class SwireFilterSelectboxComponent implements OnInit, ControlValueAccessor {
+    private _eref;
+    filterData: any;
+    atleastOneSelected: boolean;
+    btnName: string;
+    btnActiveClassName: string;
+    btnClassName: string;
+    bindLabel: string;
+    bindValue: any;
+    swireDynamicClassName: string;
+    searchBoxPlaceHolder: string;
+    filterdata: any;
+    allCheckedItems: any;
+    showList: boolean;
+    disabled: boolean;
+    szValue: any;
+    touched: any;
+    toggleButton: ElementRef;
+    listFilter: ElementRef;
+    constructor(_eref: ElementRef);
+    onClick(event: any): void;
+    ngOnInit(): void;
+    onChange: (szValue: any) => void;
+    onTouched: () => void;
+    writeValue(szValue: any): void;
+    onChangeHandler(e: any): void;
+    registerOnChange(onChange: any): void;
+    registerOnTouched(onTouched: any): void;
+    markAsTouched(): void;
+    setDisabledState(disabled: boolean): void;
+    onSelected(item: any): void;
+    showHideItems(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<SwireFilterSelectboxComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SwireFilterSelectboxComponent, "swire-filter-selectbox", never, { "filterData": "filterData"; "atleastOneSelected": "atleastOneSelected"; "btnName": "btnName"; "btnActiveClassName": "btnActiveClassName"; "btnClassName": "btnClassName"; "bindLabel": "bindLabel"; "bindValue": "bindValue"; "swireDynamicClassName": "swireDynamicClassName"; "searchBoxPlaceHolder": "searchBoxPlaceHolder"; }, {}, never, never>;
+}
